@@ -1,0 +1,54 @@
+html {font-size: medium}
+body {background: white; color: black; margin: 0}
+section, header, footer {padding: 0.5em}
+@media (min-width: 46em) {
+  section, header, footer {padding: 2em}
+}
+#talk {background: hsl(204,69%,25%); color: white}
+a {color: inherit; text-decoration: underline; transition: 0.2s}
+a:hover, :visited {text-decoration: underline; text-decoration-style: dotted}
+
+.buttons {overflow: hidden}
+.buttons > * {box-sizing: border-box; float: left; width: 48%; border: none;
+  width: calc(49.9% - 2rem); margin: 0 2rem 2rem 0; text-align: center}
+.buttons > *:nth-child(2n+1) {clear: both}
+.buttons a {text-decoration: none}
+@media (min-width: 33em) {
+  .buttons > * {width: 31%; width: calc(33.3% - 2rem)}
+  .buttons > *:nth-child(2n+1) {clear: none}
+  .buttons > *:nth-child(3n+1) {clear: both}
+}
+@supports (display: grid) {
+  .buttons {overflow: visible; display: grid;
+    grid: "a b" / 1fr 1fr; grid-gap: 2rem; gap: 2rem;
+    align-items: stretch; justify-items: stretch}
+  .buttons > * {width: auto; margin: 0; float: none}
+  .buttons img {max-height: none} /* 100% computes to 0 in Blink */
+  @media (min-width: 33em) {
+    .buttons {grid: "a b c" / 1fr 1fr 1fr}
+  }
+}
+.buttons > * {background: #103852; color: white; font-weight: 700;
+  padding: 0.6rem; display: flex; align-items: center; justify-content: center}
+.buttons > :focus {outline-color: black}
+
+/* Miscellaneous icons. Add something like class="picto im-info" to an
+   element to prefix the element with the im-info icon.
+
+   For nicer icons, consider embedding the iconmonstr-iconic-font from
+   https://iconmonstr.com/ as a Web Font. (We didn't make a copy
+   available here, because the license doesn't allow redistribution,
+   but you can download it yourself and use it for free.)
+ */
+.picto::before {/*font-family: iconmonstr-iconic-font;
+  font-size-adjust: 1.0;*/ line-height: 0.6; font-style: normal;
+  display: inline-block; margin-right: 0.33em;
+  vertical-align: middle; text-indent: 0;
+  text-rendering: auto}
+li.picto {list-style: none; padding-left: 0; margin-left: 0}
+.im-arrow-left::before {content: "⬅︎"}
+.im-data::before {content: "≣"}
+.im-arrow-right::before {content: "➡︎"}
+.im-question::before {content: "?⃝"}
+.im-angle-up::before {content: "^"}
+

@@ -1,0 +1,2250 @@
+WEBVTT
+
+1
+00:00:01.470 --> 00:00:03.360
+<v ->Hello, I'd like to talk to you</v>
+
+2
+00:00:03.360 --> 00:00:05.220
+about the internationalization work
+
+3
+00:00:05.220 --> 00:00:08.163
+which we've been doing recently at the W3C.
+
+4
+00:00:09.010 --> 00:00:11.990
+On slide two, you can see that we grouped the work
+
+5
+00:00:11.990 --> 00:00:13.650
+of the Internationalization Activity
+
+6
+00:00:13.650 --> 00:00:17.240
+into three main bucket areas.
+
+7
+00:00:17.240 --> 00:00:21.480
+One is requirements work, which sets out to establish
+
+8
+00:00:21.480 --> 00:00:24.993
+what needs to be done to make the Web world-ready.
+
+9
+00:00:26.030 --> 00:00:28.210
+One aspect of that is what we'll describe
+
+10
+00:00:28.210 --> 00:00:31.050
+in this talk as language enablement.
+
+11
+00:00:31.050 --> 00:00:35.110
+The key stakeholders here are end users of the Web.
+
+12
+00:00:35.110 --> 00:00:37.810
+Another area of work is reviewing specifications
+
+13
+00:00:37.810 --> 00:00:40.450
+and providing advice to developers.
+
+14
+00:00:40.450 --> 00:00:43.600
+And the third bucket is education and outreach.
+
+15
+00:00:43.600 --> 00:00:45.160
+Content authors and developers
+
+16
+00:00:45.160 --> 00:00:46.923
+are the key stakeholders here.
+
+17
+00:00:47.870 --> 00:00:51.180
+The core work is supported by member funding,
+
+18
+00:00:51.180 --> 00:00:53.540
+but additional resources are made available
+
+19
+00:00:53.540 --> 00:00:56.673
+through the Internationalization Sponsorship Program.
+
+20
+00:00:57.540 --> 00:00:59.800
+We've been running that program for two years now
+
+21
+00:00:59.800 --> 00:01:02.400
+thanks to sponsorship from Alibaba,
+
+22
+00:01:02.400 --> 00:01:04.800
+the Advanced Publishing Lab in Japan,
+
+23
+00:01:04.800 --> 00:01:07.980
+Apple, Monotype, and the Paciello Group,
+
+24
+00:01:07.980 --> 00:01:09.760
+and we'd like to say a big thank you to them
+
+25
+00:01:09.760 --> 00:01:11.610
+for their support.
+
+26
+00:01:11.610 --> 00:01:14.360
+The initial phase will end in the middle of this year
+
+27
+00:01:14.360 --> 00:01:15.650
+and we are hoping we'll be able
+
+28
+00:01:15.650 --> 00:01:17.853
+to extend the program beyond that date.
+
+29
+00:01:18.700 --> 00:01:22.117
+We already have received an intent to renew sponsorship from
+
+30
+00:01:22.117 --> 00:01:25.810
+APL and Apple, and we're extremely grateful for that.
+
+31
+00:01:25.810 --> 00:01:29.260
+However, we need to find additional funders.
+
+32
+00:01:29.260 --> 00:01:31.260
+Slide three gives an overview
+
+33
+00:01:31.260 --> 00:01:33.460
+of what I plan to cover during this talk.
+
+34
+00:01:33.460 --> 00:01:36.300
+Time is short, so I'll focus in on the work
+
+35
+00:01:36.300 --> 00:01:39.030
+that we've been able to do under the umbrella
+
+36
+00:01:39.030 --> 00:01:41.750
+of the Internationalization Sponsorship Program
+
+37
+00:01:41.750 --> 00:01:45.200
+and particularly in the area of language enablement.
+
+38
+00:01:45.200 --> 00:01:47.870
+Language enablement means ensuring that users
+
+39
+00:01:47.870 --> 00:01:49.330
+around the world are able to use
+
+40
+00:01:49.330 --> 00:01:51.333
+the Web in their own language.
+
+41
+00:01:52.890 --> 00:01:55.480
+We'll start by reviewing the framework we developed
+
+42
+00:01:55.480 --> 00:01:57.673
+to support the language enablement work.
+
+43
+00:01:58.680 --> 00:02:00.290
+We'll also report progress against
+
+44
+00:02:00.290 --> 00:02:02.333
+the sponsorship program goals.
+
+45
+00:02:03.320 --> 00:02:06.070
+Then I'll include two additional sections
+
+46
+00:02:06.070 --> 00:02:09.470
+that are likely to be of more interest to developers.
+
+47
+00:02:09.470 --> 00:02:12.040
+I'll introduce the Language Enablement Index
+
+48
+00:02:12.890 --> 00:02:15.070
+and describe the recent developments
+
+49
+00:02:15.070 --> 00:02:17.773
+in language enablement tooling.
+
+50
+00:02:19.640 --> 00:02:23.630
+So let's go to slide four and begin a quick overview
+
+51
+00:02:23.630 --> 00:02:27.263
+of the language enablement framework that we put in place.
+
+52
+00:02:28.460 --> 00:02:31.890
+The framework is a set of tools and procedures we developed
+
+53
+00:02:31.890 --> 00:02:34.010
+that are common to all of the groups
+
+54
+00:02:34.010 --> 00:02:36.743
+who we currently have working on language enablement.
+
+55
+00:02:37.710 --> 00:02:41.730
+This enables us to centralize information and efficiently
+
+56
+00:02:41.730 --> 00:02:44.323
+create new groups and get them up and running.
+
+57
+00:02:45.380 --> 00:02:50.140
+On slide five, we see some pictures of the Language Matrix.
+
+58
+00:02:50.140 --> 00:02:53.150
+Note by the way that the images on the following slides
+
+59
+00:02:53.150 --> 00:02:55.250
+are there to help you visualize
+
+60
+00:02:55.250 --> 00:02:56.340
+what I'm talking about.
+
+61
+00:02:56.340 --> 00:02:59.860
+You don't need to read the detail if you're in a hurry.
+
+62
+00:02:59.860 --> 00:03:02.220
+The Language Matrix brings together all of the work
+
+63
+00:03:02.220 --> 00:03:05.100
+that we're doing in the form of a heat map.
+
+64
+00:03:05.100 --> 00:03:08.040
+A set of languages appear down the left side,
+
+65
+00:03:08.040 --> 00:03:11.790
+ordered by script, and across the top are a set of features
+
+66
+00:03:11.790 --> 00:03:14.010
+that need to be supported if users around the world
+
+67
+00:03:14.010 --> 00:03:18.003
+are going to successfully use their own language on the Web.
+
+68
+00:03:19.300 --> 00:03:23.460
+The intersection of the language row and the feature column
+
+69
+00:03:23.460 --> 00:03:27.080
+is a coloured box that indicates
+
+70
+00:03:27.080 --> 00:03:29.520
+(1) whether we have an issue to address,
+
+71
+00:03:29.520 --> 00:03:33.563
+and (2) what is the severity of that issue if there is one.
+
+72
+00:03:34.780 --> 00:03:37.050
+So if a cell is coloured dark green
+
+73
+00:03:37.050 --> 00:03:40.103
+we don't know of any issues, we think we're okay.
+
+74
+00:03:41.080 --> 00:03:44.340
+If the cell is coloured light green
+
+75
+00:03:44.340 --> 00:03:48.230
+we believe that there are some barriers to use of the Web,
+
+76
+00:03:48.230 --> 00:03:51.240
+though they tend to be particularly related
+
+77
+00:03:51.240 --> 00:03:53.103
+to advanced features.
+
+78
+00:03:54.810 --> 00:03:57.890
+Orange squares, on the other hand, highlight basic issues
+
+79
+00:03:57.890 --> 00:04:01.090
+that we believe users will come across regularly
+
+80
+00:04:01.090 --> 00:04:03.010
+as they try to use the Web in their language,
+
+81
+00:04:03.010 --> 00:04:05.493
+on an everyday basis.
+
+82
+00:04:06.830 --> 00:04:09.050
+If you click on any of the colored squares
+
+83
+00:04:09.050 --> 00:04:10.850
+it'll take you to the relevant section
+
+84
+00:04:10.850 --> 00:04:13.970
+of a gap analysis document.
+
+85
+00:04:13.970 --> 00:04:17.170
+You can see an example of part of the gap analysis document
+
+86
+00:04:17.170 --> 00:04:19.580
+on slide six.
+
+87
+00:04:19.580 --> 00:04:21.980
+And in these documents we,
+
+88
+00:04:21.980 --> 00:04:24.180
+(1) describe the problem,
+
+89
+00:04:24.180 --> 00:04:27.280
+(2) describe the current level of support
+
+90
+00:04:27.280 --> 00:04:29.743
+in specifications and browsers,
+
+91
+00:04:30.680 --> 00:04:33.270
+and (3), we attempt to indicate the severity
+
+92
+00:04:33.270 --> 00:04:34.993
+of the problem for the user.
+
+93
+00:04:35.930 --> 00:04:37.760
+While you're doing gap analysis work,
+
+94
+00:04:37.760 --> 00:04:40.720
+it's important to be able to quickly and easily create
+
+95
+00:04:40.720 --> 00:04:44.900
+tests to explore and monitor what works and what doesn't.
+
+96
+00:04:44.900 --> 00:04:47.180
+I'll talk later about some recent innovations
+
+97
+00:04:47.180 --> 00:04:48.333
+there that help.
+
+98
+00:04:49.260 --> 00:04:53.870
+Slide seven talks about documenting requirements.
+
+99
+00:04:53.870 --> 00:04:56.670
+As we document gaps, it's important to clarify
+
+100
+00:04:56.670 --> 00:05:01.420
+what we expect to happen in an ideal situation.
+
+101
+00:05:01.420 --> 00:05:03.400
+So, for each of the gap analysis documents,
+
+102
+00:05:03.400 --> 00:05:06.650
+we've tried to create a requirements document that explains
+
+103
+00:05:06.650 --> 00:05:09.360
+how a script or a language works,
+
+104
+00:05:09.360 --> 00:05:12.800
+at least for the gaps that we're pointing out.
+
+105
+00:05:12.800 --> 00:05:15.320
+Slide eight is about networking.
+
+106
+00:05:15.320 --> 00:05:18.160
+An important aspect of the language enablement work
+
+107
+00:05:18.160 --> 00:05:20.530
+is to allow experts around the world
+
+108
+00:05:20.530 --> 00:05:23.930
+to collaborate and follow what's going on,
+
+109
+00:05:23.930 --> 00:05:27.200
+and the framework we used needs to facilitate that communication.
+
+110
+00:05:27.200 --> 00:05:30.600
+So we use GitHub issues for our technical discussions,
+
+111
+00:05:30.600 --> 00:05:33.280
+just like other working groups at the W3C,
+
+112
+00:05:33.280 --> 00:05:36.220
+but we also pioneered the daily digest mechanism
+
+113
+00:05:36.220 --> 00:05:39.210
+that informs the experts about developments related
+
+114
+00:05:39.210 --> 00:05:40.733
+to their language of interest –
+
+115
+00:05:41.820 --> 00:05:45.136
+not only in the GitHub issues of their own group,
+
+116
+00:05:45.136 --> 00:05:49.140
+but also capturing issues raised by other working groups,
+
+117
+00:05:49.140 --> 00:05:53.260
+such as CSS, HTML, TTML, SVG, et cetera,
+
+118
+00:05:53.260 --> 00:05:55.290
+that have a bearing on their language,
+
+119
+00:05:55.290 --> 00:05:58.873
+so that they remain informed about those developments too.
+
+120
+00:05:59.930 --> 00:06:03.670
+Moving to slide nine, the end goal of all this activity
+
+121
+00:06:03.670 --> 00:06:06.860
+is of course to submit requests to spec developers
+
+122
+00:06:06.860 --> 00:06:09.640
+and implementers where changes are needed.
+
+123
+00:06:09.640 --> 00:06:11.100
+So we've begun that process,
+
+124
+00:06:11.100 --> 00:06:13.450
+although the larger focus so far has been
+
+125
+00:06:13.450 --> 00:06:16.023
+on gathering information and establishing patterns.
+
+126
+00:06:16.940 --> 00:06:19.440
+But in the next phase we expect to increase the emphasis
+
+127
+00:06:19.440 --> 00:06:23.770
+on this aspect and we have actually begun already.
+
+128
+00:06:23.770 --> 00:06:26.710
+Slide 10 summarizes the aspects of the framework
+
+129
+00:06:26.710 --> 00:06:29.800
+that we just touched upon.
+
+130
+00:06:29.800 --> 00:06:31.940
+So now let's take a look at the achievements
+
+131
+00:06:31.940 --> 00:06:34.090
+of the Internationalization Initiative
+
+132
+00:06:34.090 --> 00:06:36.800
+during its first phase.
+
+133
+00:06:36.800 --> 00:06:39.340
+And there are five main goals that we set ourselves
+
+134
+00:06:39.340 --> 00:06:40.850
+at the beginning.
+
+135
+00:06:40.850 --> 00:06:44.360
+If we look at slide 12, we see the first of those,
+
+136
+00:06:44.360 --> 00:06:47.980
+which is to widen participation of expert networks
+
+137
+00:06:47.980 --> 00:06:52.980
+in language enablement groups and by extension in W3C work.
+
+138
+00:06:53.940 --> 00:06:55.810
+So there are still many places around the world where
+
+139
+00:06:55.810 --> 00:06:58.940
+the W3C has not penetrated very far
+
+140
+00:06:58.940 --> 00:07:01.040
+and those places often correspond
+
+141
+00:07:01.040 --> 00:07:03.450
+quite closely with languages and scripts
+
+142
+00:07:03.450 --> 00:07:06.910
+that are very different from English.
+
+143
+00:07:06.910 --> 00:07:09.540
+So a key objective of this exercise,
+
+144
+00:07:09.540 --> 00:07:12.440
+is to reach out to people in these areas,
+
+145
+00:07:12.440 --> 00:07:14.410
+make them aware of the work
+
+146
+00:07:14.410 --> 00:07:17.200
+that we're doing at the W3C,
+
+147
+00:07:17.200 --> 00:07:20.660
+and get them involved in improving the Web locally by
+
+148
+00:07:20.660 --> 00:07:23.650
+participating in the groups that we set up.
+
+149
+00:07:23.650 --> 00:07:26.350
+Slide 12 shows some statistics
+
+150
+00:07:26.350 --> 00:07:28.830
+around what we've achieved so far.
+
+151
+00:07:28.830 --> 00:07:33.560
+We have active networks running for Arabic and Persian,
+
+152
+00:07:33.560 --> 00:07:36.480
+Chinese (Simplified and Traditional),
+
+153
+00:07:36.480 --> 00:07:38.740
+for Ethiopic languages,
+
+154
+00:07:38.740 --> 00:07:40.410
+for Indic languages,
+
+155
+00:07:40.410 --> 00:07:41.640
+for Japanese,
+
+156
+00:07:41.640 --> 00:07:45.103
+Mongolian and several Southeast Asian languages.
+
+157
+00:07:46.130 --> 00:07:48.270
+These are all separate groups
+
+158
+00:07:48.270 --> 00:07:50.860
+dedicated to particular languages or regions
+
+159
+00:07:50.860 --> 00:07:53.760
+but using the same framework.
+
+160
+00:07:53.760 --> 00:07:54.960
+We are currently in the process
+
+161
+00:07:54.960 --> 00:07:57.000
+of establishing two more groups,
+
+162
+00:07:57.000 --> 00:07:59.540
+one for African languages
+
+163
+00:07:59.540 --> 00:08:02.120
+and another for European languages.
+
+164
+00:08:02.120 --> 00:08:04.630
+They're still in the early stages of setup
+
+165
+00:08:04.630 --> 00:08:09.130
+and we welcome interest from potential participants.
+
+166
+00:08:09.130 --> 00:08:12.320
+In addition, we have two more groups, Hebrew and Tibetan,
+
+167
+00:08:12.320 --> 00:08:15.390
+which we started a little while ago but where we need
+
+168
+00:08:15.390 --> 00:08:18.960
+additional experts to drive that work forward.
+
+169
+00:08:18.960 --> 00:08:22.400
+So, in total we have 103 experts
+
+170
+00:08:22.400 --> 00:08:24.820
+signed up to these groups as contributors.
+
+171
+00:08:24.820 --> 00:08:27.090
+That's 103 sign-ups.
+
+172
+00:08:27.090 --> 00:08:30.130
+These are people that we rely on to move the work forward
+
+173
+00:08:30.130 --> 00:08:33.030
+and provide content and expertise.
+
+174
+00:08:33.030 --> 00:08:38.030
+We have 259 subscriptions to our notification lists.
+
+175
+00:08:39.510 --> 00:08:42.120
+So, this brings in around 150 additional people
+
+176
+00:08:42.120 --> 00:08:44.940
+who are following the work and may sometimes
+
+177
+00:08:44.940 --> 00:08:47.200
+participate in discussions.
+
+178
+00:08:47.200 --> 00:08:49.460
+It may help to measure the work done
+
+179
+00:08:49.460 --> 00:08:51.963
+by looking at the issues raised in GitHub.
+
+180
+00:08:52.850 --> 00:08:55.200
+91 issues were raised
+
+181
+00:08:55.200 --> 00:08:58.080
+that put questions to the language experts.
+
+182
+00:08:58.080 --> 00:09:00.520
+These are things that working groups at the W3C
+
+183
+00:09:00.520 --> 00:09:03.855
+need to understand about how languages work.
+
+184
+00:09:03.855 --> 00:09:08.580
+And so their questions get passed on to the local experts.
+
+185
+00:09:08.580 --> 00:09:11.470
+In addition, we brought to the attention of these experts
+
+186
+00:09:11.470 --> 00:09:15.590
+74 issues that the W3C working groups
+
+187
+00:09:15.590 --> 00:09:17.540
+had raised during their work,
+
+188
+00:09:17.540 --> 00:09:18.920
+but which have a bearing on
+
+189
+00:09:18.920 --> 00:09:21.620
+their particular language or writing system.
+
+190
+00:09:21.620 --> 00:09:26.050
+So overall, the language enablement groups have raised
+
+191
+00:09:26.050 --> 00:09:30.060
+639 GitHub issues while doing the work in this first phase,
+
+192
+00:09:30.060 --> 00:09:32.230
+which is quite a good number.
+
+193
+00:09:32.230 --> 00:09:35.600
+Slide 13 brings us to our second goal:
+
+194
+00:09:35.600 --> 00:09:38.120
+to increase the scope and documented output
+
+195
+00:09:38.120 --> 00:09:40.880
+related to language enablement work.
+
+196
+00:09:40.880 --> 00:09:42.610
+Let's run through a few more statistics
+
+197
+00:09:42.610 --> 00:09:45.070
+give you an idea of what's been happening.
+
+198
+00:09:45.070 --> 00:09:48.680
+So, we have 14 gap analysis documents
+
+199
+00:09:48.680 --> 00:09:51.570
+currently in active development.
+
+200
+00:09:51.570 --> 00:09:53.440
+One for Arabic and Persian,
+
+201
+00:09:53.440 --> 00:09:56.440
+another for Simplified and Traditional Chinese.
+
+202
+00:09:56.440 --> 00:09:58.450
+Another for Ethiopic, which covers
+
+203
+00:09:58.450 --> 00:10:01.090
+the Amharic and Tigrinya languages.
+
+204
+00:10:01.090 --> 00:10:04.710
+Devanagari, which is Hindi and Marathi,
+
+205
+00:10:04.710 --> 00:10:07.040
+Bengali (Bangla and Assamese),
+
+206
+00:10:07.040 --> 00:10:10.500
+Gurmukhi, which covers the Punjabi language,
+
+207
+00:10:10.500 --> 00:10:14.760
+Tamil, Gujarati, Japanese, Mongolian,
+
+208
+00:10:14.760 --> 00:10:18.900
+Javanese in the Javanese script, Khmer, Lao,
+
+209
+00:10:18.900 --> 00:10:20.500
+and Thai.
+
+210
+00:10:20.500 --> 00:10:22.450
+And we have requirements
+
+211
+00:10:22.450 --> 00:10:25.920
+documents backing up most of those documents too.
+
+212
+00:10:25.920 --> 00:10:28.710
+There are six additional gap analysis documents
+
+213
+00:10:28.710 --> 00:10:30.910
+which we term 'provisional'
+
+214
+00:10:30.910 --> 00:10:32.570
+and which have generally been submitted
+
+215
+00:10:32.570 --> 00:10:34.810
+by an individual but have not been worked on
+
+216
+00:10:34.810 --> 00:10:37.030
+by a group of experts.
+
+217
+00:10:37.030 --> 00:10:39.430
+They cover Cree and Inuktitut,
+
+218
+00:10:40.310 --> 00:10:44.850
+Cherokee, Dutch, Georgian, Greek, and Hungarian.
+
+219
+00:10:44.850 --> 00:10:47.490
+In addition, the Japanese Layout Task Force
+
+220
+00:10:47.490 --> 00:10:51.120
+was re-activated during this phase and has been quite busy,
+
+221
+00:10:51.120 --> 00:10:54.740
+not only producing an editorial update to the famous
+
+222
+00:10:54.740 --> 00:10:57.340
+Japanese Layout Requirements document
+
+223
+00:10:57.340 --> 00:10:59.440
+but also considering plans for new versions
+
+224
+00:10:59.440 --> 00:11:00.303
+of that document.
+
+225
+00:11:01.300 --> 00:11:03.130
+By the time you read this presentation,
+
+226
+00:11:03.130 --> 00:11:06.060
+they should have also published a shorter document
+
+227
+00:11:06.060 --> 00:11:09.550
+called Simple Ruby as a Working Group Note,
+
+228
+00:11:09.550 --> 00:11:11.760
+which aims to establish a baseline
+
+229
+00:11:11.760 --> 00:11:13.810
+for Ruby support on the Web.
+
+230
+00:11:13.810 --> 00:11:17.540
+I mentioned earlier that we raised 15 bugs, typically for
+
+231
+00:11:17.540 --> 00:11:20.590
+multiple browser implementers,
+
+232
+00:11:20.590 --> 00:11:23.840
+and we've also begun identifying GitHub issue threads
+
+233
+00:11:23.840 --> 00:11:27.440
+that can be regarded as useful resources in their own right.
+
+234
+00:11:27.440 --> 00:11:29.900
+We've so far identified around nine of those,
+
+235
+00:11:29.900 --> 00:11:33.640
+which give many useful details and examples
+
+236
+00:11:33.640 --> 00:11:38.000
+related to a particular language or script.
+
+237
+00:11:38.000 --> 00:11:41.350
+Slide 14 lists the remaining goals.
+
+238
+00:11:41.350 --> 00:11:43.820
+The first is to address skill building
+
+239
+00:11:43.820 --> 00:11:46.680
+and succession planning for internationalization.
+
+240
+00:11:46.680 --> 00:11:48.970
+And I'm happy to say that the program funding
+
+241
+00:11:48.970 --> 00:11:51.240
+has allowed us to augment the staff resources
+
+242
+00:11:51.240 --> 00:11:52.883
+dedicated to internationalization.
+
+243
+00:11:52.883 --> 00:11:57.883
+Atsushi Shimono from Keio and Fuqiao Xue from Beihang
+
+244
+00:11:58.230 --> 00:12:01.420
+broadened our ability to do core support
+
+245
+00:12:01.420 --> 00:12:04.700
+as well as adding additional support
+
+246
+00:12:04.700 --> 00:12:07.069
+for language enablement work.
+
+247
+00:12:07.069 --> 00:12:11.080
+This also helps us to spread the institutional knowledge
+
+248
+00:12:11.080 --> 00:12:14.966
+about internationalization through the W3C staff,
+
+249
+00:12:14.966 --> 00:12:16.650
+much more effectively.
+
+250
+00:12:16.650 --> 00:12:20.570
+The fourth goal was to significantly improve guidelines
+
+251
+00:12:20.570 --> 00:12:22.910
+and self-review checklists with developers.
+
+252
+00:12:22.910 --> 00:12:26.050
+The additional resources that I just mentioned
+
+253
+00:12:26.050 --> 00:12:29.380
+helped us find more time for these core activities.
+
+254
+00:12:29.380 --> 00:12:31.070
+Not only were we able to improve
+
+255
+00:12:31.070 --> 00:12:34.530
+the detailed I18n Review Checklist,
+
+256
+00:12:34.530 --> 00:12:37.940
+but we also developed a new self-review checklist
+
+257
+00:12:37.940 --> 00:12:41.460
+that W3C working groups can use to identify areas
+
+258
+00:12:41.460 --> 00:12:44.450
+of their work that are potentially affected
+
+259
+00:12:44.450 --> 00:12:47.070
+by internationalization considerations.
+
+260
+00:12:47.070 --> 00:12:50.830
+Significant advances also included the publication
+
+261
+00:12:50.830 --> 00:12:53.180
+of the Character Model for the Worldwide Web: String Matching,
+
+262
+00:12:53.180 --> 00:12:58.070
+and another document on strings for the Web
+
+263
+00:12:58.070 --> 00:13:02.020
+and metadata related to language and direction.
+
+264
+00:13:02.020 --> 00:13:05.010
+Goal five was related to tests.
+
+265
+00:13:05.010 --> 00:13:09.030
+Earlier this year, we developed a new framework
+
+266
+00:13:09.030 --> 00:13:10.980
+for exploratory testing,
+
+267
+00:13:10.980 --> 00:13:13.340
+which I'll describe in more detail later.
+
+268
+00:13:13.340 --> 00:13:14.800
+This'll be a significant help
+
+269
+00:13:14.800 --> 00:13:16.810
+for those doing gap analysis work,
+
+270
+00:13:16.810 --> 00:13:18.460
+but it's also proving useful
+
+271
+00:13:18.460 --> 00:13:21.340
+for other internationalization work too.
+
+272
+00:13:21.340 --> 00:13:24.850
+We also migrated a large number of tests from the i18n
+
+273
+00:13:24.850 --> 00:13:28.310
+test suite to the Web Platform Tests repository.
+
+274
+00:13:28.310 --> 00:13:31.910
+Testing paged media, however, requires a different approach
+
+275
+00:13:31.910 --> 00:13:33.910
+to the tests we've done so far,
+
+276
+00:13:33.910 --> 00:13:36.310
+and we don't have a solution for this yet,
+
+277
+00:13:36.310 --> 00:13:38.250
+but other groups around the W3C are beginning
+
+278
+00:13:38.250 --> 00:13:39.740
+to look at this also and we look forward
+
+279
+00:13:39.740 --> 00:13:43.000
+to collaborating with them on this.
+
+280
+00:13:43.000 --> 00:13:46.620
+So in summary, on slide 15,
+
+281
+00:13:46.620 --> 00:13:49.960
+the Internationalization Sponsorship Program was,
+
+282
+00:13:49.960 --> 00:13:53.110
+in my opinion, successful in enabling additional work
+
+283
+00:13:53.110 --> 00:13:55.420
+within and beyond the core.
+
+284
+00:13:55.420 --> 00:13:57.040
+The language enablement initiative
+
+285
+00:13:57.040 --> 00:14:00.820
+was also very successful in expanding the reach of the W3C
+
+286
+00:14:00.820 --> 00:14:04.280
+into new areas around the globe and bringing those people
+
+287
+00:14:04.280 --> 00:14:08.020
+within the circle of the W3C.
+
+288
+00:14:08.020 --> 00:14:10.570
+So the initial phase is nearing completion,
+
+289
+00:14:10.570 --> 00:14:14.060
+but much more obviously remains to be done
+
+290
+00:14:14.060 --> 00:14:17.400
+to ensure that people all around the world can interact
+
+291
+00:14:17.400 --> 00:14:21.022
+with the Web in their own language or writing system.
+
+292
+00:14:21.022 --> 00:14:25.100
+We therefore would like to ask you to please help us.
+
+293
+00:14:25.100 --> 00:14:29.040
+First of all, to find more experts to extend our networks,
+
+294
+00:14:29.040 --> 00:14:32.010
+particularly in-country people who are motivated
+
+295
+00:14:32.010 --> 00:14:36.130
+to make the Web work better for their language or script.
+
+296
+00:14:36.130 --> 00:14:38.730
+But also please contact Jeff Jaffe
+
+297
+00:14:38.730 --> 00:14:41.270
+if your organization can step up
+
+298
+00:14:41.270 --> 00:14:43.710
+as a sponsor for the next round.
+
+299
+00:14:43.710 --> 00:14:47.290
+We need additional sponsors and this is the time
+
+300
+00:14:47.290 --> 00:14:49.290
+when we need to hear from people.
+
+301
+00:14:49.290 --> 00:14:52.840
+So there are two more sections to this presentation,
+
+302
+00:14:52.840 --> 00:14:55.530
+which I think are probably more of interest,
+
+303
+00:14:55.530 --> 00:14:58.370
+as I said before, to technical people.
+
+304
+00:14:58.370 --> 00:15:01.500
+I'm going to talk about the Language Enablement Index
+
+305
+00:15:01.500 --> 00:15:04.750
+and I'm going to talk about some additional innovations
+
+306
+00:15:04.750 --> 00:15:07.550
+that we've made recently with regard
+
+307
+00:15:07.550 --> 00:15:10.113
+to the Language Enablement Framework.
+
+308
+00:15:11.000 --> 00:15:13.920
+So, on slide 17
+
+309
+00:15:16.430 --> 00:15:19.060
+we start talking about the Language Enablement Index.
+
+310
+00:15:19.060 --> 00:15:23.610
+Well, basically, this is a document on the Web
+
+311
+00:15:23.610 --> 00:15:27.620
+which allows you to find all the useful information
+
+312
+00:15:27.620 --> 00:15:31.620
+that we've been gathering so far in terms of requirements,
+
+313
+00:15:31.620 --> 00:15:33.180
+and so on, and so forth.
+
+314
+00:15:33.180 --> 00:15:34.430
+I'll show you some examples
+
+315
+00:15:34.430 --> 00:15:37.393
+of the kinds of things that you can find there.
+
+316
+00:15:39.580 --> 00:15:40.413
+And,
+
+317
+00:15:41.940 --> 00:15:45.020
+it's broken into a number of sections,
+
+318
+00:15:45.020 --> 00:15:48.105
+and the section headings are harmonized
+
+319
+00:15:48.105 --> 00:15:53.105
+as a way of categorizing features that we're interested in —
+
+320
+00:15:54.130 --> 00:15:56.170
+harmonized across all of the
+
+321
+00:15:56.170 --> 00:15:57.860
+Language Enablement Framework deliverables:
+
+322
+00:15:57.860 --> 00:16:00.620
+so gap analysis, testing,
+
+323
+00:16:01.790 --> 00:16:02.623
+you name it,
+
+324
+00:16:05.008 --> 00:16:07.570
+the Language Matrix as well,
+
+325
+00:16:07.570 --> 00:16:11.213
+they use similar sections to this document.
+
+326
+00:16:13.540 --> 00:16:17.200
+So I'll take you through just very briefly to give you
+
+327
+00:16:17.200 --> 00:16:20.470
+a flavor of what this document has,
+
+328
+00:16:20.470 --> 00:16:24.228
+showing you a few examples.
+
+329
+00:16:24.228 --> 00:16:28.470
+The examples I will show are all taken from the first
+
+330
+00:16:28.470 --> 00:16:33.470
+subsection in the document, which relates to vertical text.
+
+331
+00:16:33.870 --> 00:16:38.870
+So, slide 18: you can see that the section on vertical text
+
+332
+00:16:39.630 --> 00:16:42.640
+contains links to requirements and specifications
+
+333
+00:16:42.640 --> 00:16:45.213
+that are relevant to that particular topic.
+
+334
+00:16:47.204 --> 00:16:49.370
+And on slide 19,
+
+335
+00:16:49.370 --> 00:16:52.430
+we look at the result of clicking
+
+336
+00:16:52.430 --> 00:16:55.410
+on one of the GitHub resources links.
+
+337
+00:16:55.410 --> 00:16:59.149
+This one is the link for requests for information,
+
+338
+00:16:59.149 --> 00:17:03.276
+and what you're seeing there is all the requests
+
+339
+00:17:03.276 --> 00:17:06.160
+that we have out at the moment, still unanswered,
+
+340
+00:17:07.120 --> 00:17:09.763
+related to vertical text.
+
+341
+00:17:11.360 --> 00:17:13.907
+So that's quite useful, if you are working on vertical texts
+
+342
+00:17:13.907 --> 00:17:16.050
+and you want to see what questions are out there
+
+343
+00:17:16.050 --> 00:17:19.160
+to be answered, then you can just
+
+344
+00:17:19.160 --> 00:17:21.190
+click on that link and get there.
+
+345
+00:17:21.190 --> 00:17:25.070
+Similarly, we have another link which takes you
+
+346
+00:17:25.070 --> 00:17:30.070
+to a set of related issues that have arisen while people
+
+347
+00:17:30.670 --> 00:17:34.203
+were working on W3C working group specifications,
+
+348
+00:17:35.919 --> 00:17:37.060
+and that's on slide 20.
+
+349
+00:17:37.060 --> 00:17:38.773
+And slide 21:
+
+350
+00:17:40.660 --> 00:17:42.900
+another link takes you
+
+351
+00:17:42.900 --> 00:17:46.700
+to a list of implementation bugs
+
+352
+00:17:46.700 --> 00:17:48.760
+that have been raised.
+
+353
+00:17:48.760 --> 00:17:50.910
+Slide 22:
+
+354
+00:17:50.910 --> 00:17:53.320
+this is the link to type samples.
+
+355
+00:17:53.320 --> 00:17:56.250
+Our Type Samples database contains
+
+356
+00:17:57.410 --> 00:17:59.116
+real samples of
+
+357
+00:17:59.116 --> 00:18:03.757
+text features that are currently found in the wild.
+
+358
+00:18:03.757 --> 00:18:05.390
+And these are some of them,
+
+359
+00:18:05.390 --> 00:18:08.373
+there's a few more for vertical text.
+
+360
+00:18:09.240 --> 00:18:14.240
+Slide 23: we also point to the I18n Test Suite,
+
+361
+00:18:14.410 --> 00:18:19.170
+and you can see here an example of the results page
+
+362
+00:18:19.170 --> 00:18:22.553
+for some of the vertical text tests.
+
+363
+00:18:24.260 --> 00:18:25.093
+And
+
+364
+00:18:26.150 --> 00:18:29.340
+we also point to the new exploratory tests,
+
+365
+00:18:29.340 --> 00:18:31.683
+which I'll mention a bit more in a moment.
+
+366
+00:18:32.730 --> 00:18:35.440
+So again, here we have a results page
+
+367
+00:18:35.440 --> 00:18:39.360
+but you can find the actual tests themselves
+
+368
+00:18:39.360 --> 00:18:42.370
+by clicking on the links that are available there.
+
+369
+00:18:42.370 --> 00:18:47.280
+So in summary the Language Enablement Index is the place
+
+370
+00:18:47.280 --> 00:18:50.823
+to find the information that we have been gathering.
+
+371
+00:18:52.170 --> 00:18:53.120
+Our final
+
+372
+00:18:54.010 --> 00:18:56.540
+section starts on slide 26
+
+373
+00:18:56.540 --> 00:18:58.770
+and we're going to talk about some recent developments,
+
+374
+00:18:58.770 --> 00:19:02.263
+which some of you may find quite interesting.
+
+375
+00:19:03.230 --> 00:19:06.510
+And the first has to do with gap analysis.
+
+376
+00:19:06.510 --> 00:19:08.850
+And it starts from a problem statement.
+
+377
+00:19:08.850 --> 00:19:12.360
+And the problem is that GitHub pull requests appear
+
+378
+00:19:12.360 --> 00:19:15.240
+formidable and difficult to use for many of the people
+
+379
+00:19:15.240 --> 00:19:17.883
+that we want to involve in developing gap analysis.
+
+380
+00:19:19.100 --> 00:19:21.860
+And this has been, I think, affecting
+
+381
+00:19:21.860 --> 00:19:23.563
+the contributions to the work.
+
+382
+00:19:24.400 --> 00:19:26.040
+So as a solution,
+
+383
+00:19:26.040 --> 00:19:30.780
+we have moved the content of the gap analysis documents
+
+384
+00:19:30.780 --> 00:19:32.453
+into GitHub issues.
+
+385
+00:19:33.330 --> 00:19:36.460
+And then we've put in place a system which means
+
+386
+00:19:36.460 --> 00:19:39.970
+that any time you change the text
+
+387
+00:19:39.970 --> 00:19:42.680
+which is in the first comment of a GitHub issue,
+
+388
+00:19:43.630 --> 00:19:47.730
+that change is immediately reflected in the HTML document
+
+389
+00:19:47.730 --> 00:19:50.070
+which brings everything together
+
+390
+00:19:50.070 --> 00:19:52.900
+and allows you to find
+
+391
+00:19:52.900 --> 00:19:56.573
+all the gap analysis texts in one place.
+
+392
+00:19:57.590 --> 00:20:01.190
+Benefits for this. It's much easier
+
+393
+00:20:01.190 --> 00:20:03.183
+and faster to edit content.
+
+394
+00:20:04.150 --> 00:20:07.460
+It's easier to hold and find discussions
+
+395
+00:20:07.460 --> 00:20:10.120
+related to a particular topic
+
+396
+00:20:10.120 --> 00:20:15.120
+because you can add comments to the particular topic
+
+397
+00:20:17.388 --> 00:20:20.423
+that is in a given issue.
+
+398
+00:20:21.710 --> 00:20:26.080
+And the labeling that we've used on the GitHub issues
+
+399
+00:20:26.080 --> 00:20:28.500
+allows us to filter
+
+400
+00:20:28.500 --> 00:20:31.520
+issues in a new and useful way.
+
+401
+00:20:31.520 --> 00:20:35.250
+I'll just give you a couple of examples.
+
+402
+00:20:35.250 --> 00:20:37.173
+On page 28,
+
+403
+00:20:38.070 --> 00:20:42.960
+we see one of the sections from the actual HTML document.
+
+404
+00:20:42.960 --> 00:20:45.870
+And of course this is a longish document
+
+405
+00:20:45.870 --> 00:20:48.263
+with many sections and many topics in it.
+
+406
+00:20:50.010 --> 00:20:51.740
+So this is about table cells
+
+407
+00:20:51.740 --> 00:20:54.140
+not handling vertical text direction properly,
+
+408
+00:20:54.140 --> 00:20:58.250
+but rather than edit the HTML you go over here
+
+409
+00:20:58.250 --> 00:21:03.250
+to this GitHub issue and there's the actual text
+
+410
+00:21:03.550 --> 00:21:04.700
+that was written
+
+411
+00:21:04.700 --> 00:21:06.990
+that appears in the slide that you just saw
+
+412
+00:21:06.990 --> 00:21:08.603
+(that is, in slide 29).
+
+413
+00:21:10.590 --> 00:21:13.120
+So that's quite easy for people to edit.
+
+414
+00:21:13.120 --> 00:21:15.780
+You'll see there's some labels on the right hand side.
+
+415
+00:21:15.780 --> 00:21:18.133
+And then slide 30, we move down that issue a little
+
+416
+00:21:18.133 --> 00:21:21.780
+and you can see an example of some comments
+
+417
+00:21:21.780 --> 00:21:25.040
+that somebody raised against the text
+
+418
+00:21:25.040 --> 00:21:26.690
+and that we then
+
+419
+00:21:26.690 --> 00:21:31.410
+edited in the text. And you can see the edits by
+
+420
+00:21:31.410 --> 00:21:35.003
+pulling down the Edit pulldown at the top of the issue.
+
+421
+00:21:38.710 --> 00:21:41.070
+And slide 31
+
+422
+00:21:41.070 --> 00:21:42.910
+just shows
+
+423
+00:21:42.910 --> 00:21:43.743
+several
+
+424
+00:21:44.710 --> 00:21:46.300
+issues
+
+425
+00:21:46.300 --> 00:21:48.530
+but we've applied some filtering here,
+
+426
+00:21:48.530 --> 00:21:53.530
+so what you're actually seeing is all the basic issues for
+
+427
+00:21:53.570 --> 00:21:56.293
+the Bengali language and nothing else.
+
+428
+00:21:59.357 --> 00:22:01.050
+And being able to filter
+
+429
+00:22:01.050 --> 00:22:03.750
+and sort things in ways like that
+
+430
+00:22:03.750 --> 00:22:07.100
+is a new thing that is enabled by the fact that we're using
+
+431
+00:22:07.100 --> 00:22:10.043
+GitHub issues for the content. That's quite useful.
+
+432
+00:22:11.290 --> 00:22:12.790
+So, so much for gap analysis.
+
+433
+00:22:12.790 --> 00:22:14.730
+Oh, there's another slide (32)
+
+434
+00:22:14.730 --> 00:22:17.170
+where we do a different type of filtering.
+
+435
+00:22:17.170 --> 00:22:20.813
+And so here we've got all the Indic languages
+
+436
+00:22:20.813 --> 00:22:24.120
+that have an issue related to line-breaking
+
+437
+00:22:24.120 --> 00:22:26.973
+and you can see what those are.
+
+438
+00:22:28.070 --> 00:22:30.750
+And this is very useful for comparing across languages
+
+439
+00:22:30.750 --> 00:22:34.670
+and finding places where we have a comment that also applies
+
+440
+00:22:34.670 --> 00:22:36.820
+to another language, and so on and so forth.
+
+441
+00:22:39.160 --> 00:22:44.160
+So, the last topic has to do with exploratory tests.
+
+442
+00:22:46.550 --> 00:22:48.700
+The problem statement:
+
+443
+00:22:48.700 --> 00:22:52.600
+it's difficult to learn how to write Web Platform Tests,
+
+444
+00:22:52.600 --> 00:22:55.410
+and it's quite time consuming to generate all the necessary
+
+445
+00:22:55.410 --> 00:22:57.400
+files with the correct content,
+
+446
+00:22:57.400 --> 00:23:01.620
+especially when you're dealing with lots of languages
+
+447
+00:23:01.620 --> 00:23:02.970
+or small tweaks
+
+448
+00:23:05.752 --> 00:23:07.352
+that might affect lots of files.
+
+449
+00:23:08.850 --> 00:23:13.150
+And it's also especially important, for gap analysis work,
+
+450
+00:23:13.150 --> 00:23:17.200
+to have a very fast and simple way to interactively create
+
+451
+00:23:17.200 --> 00:23:19.873
+exploratory tests and record results.
+
+452
+00:23:21.180 --> 00:23:22.573
+So, our solution:
+
+453
+00:23:23.410 --> 00:23:26.480
+we created test framework pages
+
+454
+00:23:26.480 --> 00:23:30.580
+with form controls to add text.
+
+455
+00:23:30.580 --> 00:23:32.870
+You can change languages as well,
+
+456
+00:23:32.870 --> 00:23:35.370
+change the font, change the box size,
+
+457
+00:23:35.370 --> 00:23:37.810
+and you can apply various CSS properties.
+
+458
+00:23:37.810 --> 00:23:40.060
+I'll show you an example of that in a moment.
+
+459
+00:23:41.965 --> 00:23:43.370
+And then
+
+460
+00:23:43.370 --> 00:23:45.830
+you can click a single button
+
+461
+00:23:45.830 --> 00:23:48.513
+and however you've set up that page,
+
+462
+00:23:49.710 --> 00:23:51.280
+you can record that set up
+
+463
+00:23:53.680 --> 00:23:56.190
+as a URL,
+
+464
+00:23:56.190 --> 00:23:59.130
+which you can then paste to somebody in an email
+
+465
+00:23:59.130 --> 00:24:02.030
+or, you could
+
+466
+00:24:02.030 --> 00:24:04.631
+paste into a GitHub issue.
+
+467
+00:24:04.631 --> 00:24:06.150
+And so we've taken lessons
+
+468
+00:24:06.150 --> 00:24:09.470
+from the gap analysis approach that we took.
+
+469
+00:24:09.470 --> 00:24:12.200
+We used GitHub issues to provide test instructions
+
+470
+00:24:12.200 --> 00:24:13.230
+and detailed results.
+
+471
+00:24:13.230 --> 00:24:16.213
+Again, you'll see examples of these all in a moment.
+
+472
+00:24:17.630 --> 00:24:21.900
+And any changes in the issue that we have created
+
+473
+00:24:21.900 --> 00:24:24.270
+for a particular test are immediately reflected
+
+474
+00:24:24.270 --> 00:24:27.560
+in the HTML results summary documents.
+
+475
+00:24:27.560 --> 00:24:30.610
+So these are documents that summarize the results for
+
+476
+00:24:32.760 --> 00:24:35.260
+a given set of tests.
+
+477
+00:24:35.260 --> 00:24:38.470
+Benefits: again, significantly lowers the barriers
+
+478
+00:24:38.470 --> 00:24:39.653
+for test production,
+
+479
+00:24:40.500 --> 00:24:42.220
+which is something that is very important
+
+480
+00:24:42.220 --> 00:24:44.300
+for the gap analysis work.
+
+481
+00:24:44.300 --> 00:24:47.770
+It allows for very quick spot checks to be run up
+
+482
+00:24:47.770 --> 00:24:49.070
+and circulated to others,
+
+483
+00:24:49.070 --> 00:24:51.610
+not necessarily related to the language enablement stuff.
+
+484
+00:24:51.610 --> 00:24:55.100
+We've used it in the Internationalization
+
+485
+00:24:55.100 --> 00:24:56.820
+Working Group for various things already,
+
+486
+00:24:56.820 --> 00:25:01.820
+and you put a test together very quickly
+
+487
+00:25:02.240 --> 00:25:06.270
+and make it into a URL and send it off to somebody.
+
+488
+00:25:06.270 --> 00:25:09.590
+It allows discussion of the tests
+
+489
+00:25:09.590 --> 00:25:12.320
+because you have comment fields underneath
+
+490
+00:25:14.118 --> 00:25:15.368
+the comment that contains
+
+491
+00:25:16.510 --> 00:25:20.170
+the test information itself.
+
+492
+00:25:20.170 --> 00:25:23.220
+And it's especially useful for exploratory tests
+
+493
+00:25:23.220 --> 00:25:25.630
+which require many small tweaks and replication
+
+494
+00:25:25.630 --> 00:25:27.880
+across multiple languages.
+
+495
+00:25:27.880 --> 00:25:30.970
+And again issue labeling allows for novel and useful ways
+
+496
+00:25:30.970 --> 00:25:33.533
+of filtering and sorting the tests that we have.
+
+497
+00:25:34.770 --> 00:25:37.360
+So, page 35,
+
+498
+00:25:37.360 --> 00:25:39.260
+sorry, slide 35.
+
+499
+00:25:39.260 --> 00:25:43.610
+We have an example of a test page that has been filled out.
+
+500
+00:25:43.610 --> 00:25:46.430
+You can see I've set the language to Amharic.
+
+501
+00:25:46.430 --> 00:25:49.290
+I've set the width of the text boxes
+
+502
+00:25:50.400 --> 00:25:51.990
+to a particular width
+
+503
+00:25:51.990 --> 00:25:56.130
+and I've put some text below that slider
+
+504
+00:25:56.130 --> 00:26:00.210
+which, when you press the GO button, appears in the two
+
+505
+00:26:00.210 --> 00:26:04.110
+orange-bounded boxes below. The top one is plain HTML
+
+506
+00:26:04.110 --> 00:26:06.760
+and the one below it is a textarea.
+
+507
+00:26:06.760 --> 00:26:09.040
+So you can compare it and see whether there are differences.
+
+508
+00:26:09.040 --> 00:26:10.173
+Sometimes there are.
+
+509
+00:26:11.140 --> 00:26:14.580
+On slide 36, we slide down that page a little
+
+510
+00:26:14.580 --> 00:26:19.070
+and you can see that we can also set various CSS properties
+
+511
+00:26:19.070 --> 00:26:22.070
+related to line breaking and word breaking.
+
+512
+00:26:22.070 --> 00:26:25.280
+And then right at the bottom of the page there's a button,
+
+513
+00:26:25.280 --> 00:26:27.280
+'Take a snapshot'; you click on that
+
+514
+00:26:28.150 --> 00:26:31.280
+and it puts a URL into the box alongside and highlights it
+
+515
+00:26:31.280 --> 00:26:33.570
+for you, so you can just copy-paste it.
+
+516
+00:26:33.570 --> 00:26:36.440
+And there you have all the information to recreate that page
+
+517
+00:26:36.440 --> 00:26:37.990
+the way that you had set it up.
+
+518
+00:26:42.181 --> 00:26:45.080
+Then, if you want to keep that test
+
+519
+00:26:45.080 --> 00:26:48.730
+and make it part of the test suites
+
+520
+00:26:48.730 --> 00:26:50.760
+that we have you go out to GitHub
+
+521
+00:26:50.760 --> 00:26:53.683
+and you create a GitHub issue, like this, for example.
+
+522
+00:26:54.680 --> 00:26:56.920
+The assertion is in the title:
+
+523
+00:26:56.920 --> 00:27:00.270
+“If word-break: break-all is applied, the word separator
+
+524
+00:27:00.270 --> 00:27:02.030
+does not wrap to the beginning of a line alone”.
+
+525
+00:27:02.030 --> 00:27:03.123
+That's our assertion.
+
+526
+00:27:04.080 --> 00:27:07.120
+Then below that, we have the first comment,
+
+527
+00:27:07.120 --> 00:27:10.330
+which contains a link to the test
+
+528
+00:27:10.330 --> 00:27:12.700
+with the URL that we've generated.
+
+529
+00:27:12.700 --> 00:27:16.320
+It contains then some instructions on how to run the test.
+
+530
+00:27:16.320 --> 00:27:20.990
+And then below that it contains results, detailed results
+
+531
+00:27:20.990 --> 00:27:25.373
+from the major browsers that we've tested.
+
+532
+00:27:29.440 --> 00:27:34.440
+Again, we have labels attached to that GitHub issue
+
+533
+00:27:34.440 --> 00:27:38.350
+which enable us to aggregate the information.
+
+534
+00:27:38.350 --> 00:27:41.076
+If you look on slide 38, you can see a test page
+
+535
+00:27:41.076 --> 00:27:46.076
+(or part of a test page) which is related to line breaking,
+
+536
+00:27:46.650 --> 00:27:48.920
+where we have some tests for Amharic
+
+537
+00:27:48.920 --> 00:27:51.197
+and we show the results for the major browsers,
+
+538
+00:27:51.197 --> 00:27:54.300
+and that information is generated automatically
+
+539
+00:27:54.300 --> 00:27:56.773
+from the GitHub issues.
+
+540
+00:27:59.520 --> 00:28:03.450
+So, that's it really, those two innovations really
+
+541
+00:28:04.680 --> 00:28:07.780
+should make it a lot easier for people doing gap analysis
+
+542
+00:28:07.780 --> 00:28:11.203
+to do some of the critical work that they need to.
+
+543
+00:28:12.240 --> 00:28:13.570
+So, on slide 39
+
+544
+00:28:14.650 --> 00:28:15.570
+and slide 40,
+
+545
+00:28:15.570 --> 00:28:20.160
+summing up the Internationalization Sponsorship Program,
+
+546
+00:28:20.160 --> 00:28:22.340
+as I've said, it's been running for a couple of years now.
+
+547
+00:28:22.340 --> 00:28:24.670
+We'd like to continue that
+
+548
+00:28:24.670 --> 00:28:26.850
+but we need some more sponsors to step up.
+
+549
+00:28:26.850 --> 00:28:28.980
+So please contact Jeff Jaffe
+
+550
+00:28:28.980 --> 00:28:32.120
+if your organization is able to step up to sponsor us
+
+551
+00:28:32.120 --> 00:28:34.653
+to keep up this good work that we've been doing.
+
+552
+00:28:36.150 --> 00:28:37.900
+For the developers and implementers,
+
+553
+00:28:37.900 --> 00:28:39.840
+we'd like to encourage you to use
+
+554
+00:28:39.840 --> 00:28:42.550
+the Language Enablement Index to find information
+
+555
+00:28:42.550 --> 00:28:44.173
+about worldwide Web support,
+
+556
+00:28:45.350 --> 00:28:47.900
+to use the new exploratory test mechanism
+
+557
+00:28:47.900 --> 00:28:51.700
+and check out the results, and to follow and contribute
+
+558
+00:28:51.700 --> 00:28:54.003
+to the gap analysis work as well.
+
+559
+00:28:55.030 --> 00:28:57.280
+And that's all I have for today.
+
+560
+00:28:57.280 --> 00:28:59.420
+So thank you very much for listening.
+
+561
+00:28:59.420 --> 00:29:01.610
+And I look forward to working with you
+
+562
+00:29:01.610 --> 00:29:04.813
+on internationalization at some point in the near future.
+

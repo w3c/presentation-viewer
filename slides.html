@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+ <head>
+  <meta content="text/html;charset=UTF-8" http-equiv="content-type" />
+  <meta content="width=device-width" name="viewport" />
+  <title>%%Title%%</title>
+  <link rel="stylesheet" href="../template/AC-2020-slides.css" />
+  <style>.slide ol > li > p:first-child { display:block; }</style>
+  <script src="../template/shower.min.js" type="text/javascript"></script>
+  <!--<script src="../template/b6plus.js" type="text/javascript"></script>-->
+ </head>
+ <body class="shower fade-in">
+
+  <div class="comment">
+   <p>This is a template for slides for <a href="/2020/05/AC/">AC
+   2020</a>. <strong>To start the slide show, click on a slide
+   (Shower) or press ‘A’ (b6+).</strong>
+   For <a href="Overview.html#manual" >usage
+   instructions</a>, see at the end.</p>
+  </div>
+
+  <!--=============================================================
+			    Example slides
+  ==============================================================-->
+
+  <div class="progress">
+   <!-- Remove this element if you don't want a progress bar -->
+  </div>
+
+  <div class="slide cover clear" id="start">
+   <h1>Internationalization</h1>
+   <address>Richard Ishida</address>
+  </div>
+
+
+
+
+
+
+
+<div class="slide" id="about2">
+<h1>About i18n @ W3C</h1>
+<ul>
+<li>Internationalization (i18n) WG key areas of activity include:
+<ul>
+<li>Requirements (including Language Enablement) (users)</li>
+<li>Reviews &amp; support (developers)</li>
+<li>Education &amp; outreach (content authors &amp; developers)</li>
+</ul>
+</li>
+</ul>
+<ul class="next">
+<li>Core work is supported by member funding, but additional resources are made available through the <a href="https://www.w3.org/International/sponsorship/">Internationalization Sponsorship program</a>.
+<ul>
+<li>Sponsored by Alibaba, APL, Apple, Monotype, Paciello Group</li>
+<li>Pleased to see renewals from APL, Apple (the rest are TBD)</li>
+</ul>
+</li>
+</ul>
+</div>
+
+
+
+
+
+
+<div class="slide" id="about3">
+<h1>Talk outline</h1>
+<p>This talk will focus on work that has been facilitated by the Internationalization Sponsorship Program, particularly in the area of Language Enablement.</p>
+<ul>
+<li>review the language enablement framework we developed</li>
+<li>report progress  against sponsorship program goals</li>
+<li>introduce the <cite>Language Enablement Index</cite></li>
+<li>describe recent developments in Language Enablement tooling</li>
+</ul>
+</div>
+
+
+
+
+
+
+<div class="slide cover">
+  <h1>Language Enablement framework</h1>
+ </div>
+
+
+
+
+<div class="slide side r" id="overview">
+<h1>Language matrix</h1>
+<img class="side" src="i18n/matrix.png" alt="...">
+<ul>
+<li>Prioritised status for language/feature pairs.</li>
+<li>Cells link to gap-analysis doc sections.</li>
+</ul>
+<img src="i18n/matrix.png" alt="...">
+</div>
+
+<!--div class="slide" id="overview2">
+<h1>Language matrix</h1>
+<img class="side" src="i18n/matrix.png" alt="...">
+</div-->
+
+
+
+
+
+<div class="slide side r" id="overview3">
+<h1>Gap analysis</h1>
+<img class="side" src="i18n/gap_analysis.png" alt="...">
+<ul>
+<li>Describe &amp; prioritise issues.</li>
+<li>Supported by tests.</li>
+</ul>
+<img src="i18n/gap_analysis_large.png" alt="...">
+</div>
+
+<!--div class="slide" id="overview4">
+<h1>Gap analysis</h1>
+<img class="side" src="i18n/gap_analysis_large.png" alt="...">
+</div-->
+
+
+
+
+
+<div class="slide side r" id="overview5">
+<h1>Documenting requirements</h1>
+<img class="side" src="i18n/alreq.png" alt="...">
+<ul>
+<li>Supports the gap-analysis work.</li>
+<li>Provides guidance for developers.</li>
+</ul>
+<img src="i18n/jlreq_large.png" alt="...">
+</div>
+
+<!--div class="slide" id="overview6">
+<h1>Requirements</h1>
+<img class="side" src="i18n/jlreq_large.png" alt="...">
+</div-->
+
+
+
+
+
+<div class="slide side r" id="overview7">
+<h1>Networking</h1>
+<img class="side" src="i18n/issues.png" alt="...">
+<ul>
+<li>Expert networks collaborate  via GitHub issues.</li>
+<li>Daily digest notifications include related WG issues.</li>
+</ul>
+<img src="i18n/issues_large.png" alt="...">
+</div>
+
+<!--div class="slide" id="overview8">
+<h1>Networking</h1>
+<img class="side" src="i18n/issues_large.png" alt="...">
+</div-->
+
+
+
+
+
+<div class="slide side r" id="overview9">
+<h1>Implementer support</h1>
+<img class="side" src="i18n/bugs.png" alt="...">
+<ul>
+<li>Bugs raised against specs &amp; implementations.</li>
+</ul>
+<img src="i18n/bugs_large.png" alt="...">
+</div>
+
+<!--div class="slide" id="overview10">
+<h1>Developer support</h1>
+<img class="side" src="i18n/bugs_large.png" alt="...">
+</div-->
+
+
+
+
+<div class="slide" id="overview10">
+<h1>Summary</h1>
+<div style="text-align: center;">
+<p><a href="https://w3c.github.io/typography/gap-analysis/language-matrix.html">Language matrix</a></p>
+<p>Gap analysis</p>
+<p>Requirements</p>
+<p>Networking</p>
+<p>Developer support</p>
+</div>
+</div>
+
+
+
+
+
+
+
+
+<div class="slide cover">
+  <h1>i18n sponsorship program achievements</h1>
+ </div>
+
+
+
+
+<div class="slide" id="le_goals">
+<h1>Goals &amp; results</h1>
+<ol>
+<li style="color: crimson;">Widen participation of expert networks in LE groups, and by extension in W3C work
+<ul style="color: black; margin-top: 0;" class="note">
+<li>Networks running for Arabic &amp; Persian, Chinese, Ethiopic, Indic languages, Japanese, Mongolian, and SE Asian languages</li>
+<li>Initial group setup for African languages, European languages, Hebrew, and Tibetan.</li>
+<li><strong>103</strong> expert contributors signed up to groups</li>
+<li><strong>259</strong> subscriptions to notification lists, following the work</li>
+<li style="margin-top: 2em;"><strong>91</strong> issues raised that put questions to the language experts</li>
+<li><strong>74</strong> WG issues (eg. CSS/SVG/TTML/HTML/etc) brought to the attention of the experts</li>
+<li><strong>639</strong> issues raised by LE groups in their work
+</li>
+</ul>
+</li>
+</ol>
+<p style="text-align: right; font-size: 60%; font-style: italic;">Figures as of beginning of April 2020</p>
+</div>
+
+
+
+
+<div class="slide" id="le_goals2">
+<h1>Goals &amp; results</h1>
+<ol start="2">
+<li style="color: crimson;">Increase scope and documented output of language enablement work.
+<ul style="color: black; margin-top: 0;" class="note">
+<li><strong>14</strong> gap-analysis docs in development:
+	Arabic &amp; Persian, Chinese (Simplified &amp; Traditional), Ethiopic (Amharic &amp; Tigrinya), Devanagari (Hindi/Marathi), Bengali (Bangla &amp;  Assamese), Gurmukhi (Punjabi), Tamil, Gujarati, Japanese, Mongolian, Javanese, Khmer, Lao, Thai</li>
+<li><strong>6</strong> additional provisional gap-analysis docs:
+	Cree &amp; Inuktitut, Cherokee, Dutch, Georgian, Greek, Hungarian</li>
+<li><cite>Japanese Layout Requirements</cite> (JLREQ) updated</li>
+<li><cite>Simple ruby</cite> published as WG Note</li>
+<li><strong>15</strong> issues tracking bugs raised for (typically multiple) browser implementers</li>
+<li><strong>9+</strong> threads identified as useful resources in their own right</li>
+</ul>
+</li>
+</ol>
+<p style="text-align: right; font-size: 60%; font-style: italic;">Figures as of beginning of April 2020</p>
+</div>
+
+
+
+
+
+
+<div class="slide" id="le_goals4">
+<h1>Goals &amp; results</h1>
+<ol start="3">
+<li style="color: crimson;">Skill building/succession planning
+<p style="color: black; margin-top: 0;" class="note">Atsushi Shimono (Keio) and Fuqiao Xue (Beihang) have broadened our ability to do core support and language enablement work, and spread W3C institutional knowledge for i18n.</p>
+</li>
+</ol>
+<ol start="4">
+<li style="color: crimson;">Significantly improve  guidelines and  self-review checklists for developers
+<p style="color: black; margin-top: 0;" class="note">I18n review checklist updated &amp; new <a href="https://w3c.github.io/i18n-drafts/techniques/shortchecklist">self-review checklist</a> developed. Significant advances included publication of <a href="https://www.w3.org/TR/charmod-norm/">Character Model for the World Wide Web: String Matching</a> and <a href="https://www.w3.org/TR/string-meta/">Strings on the Web: Language and Direction Metadata</a></p>
+</li>
+</ol>
+<ol start="5">
+<li style="color: crimson;">Investigate ways to extend the i18n test framework, including to support tests and results for paged media generators
+<p style="color: black; margin-top: 0;" class="note">Exploratory test framework developed with GitHub-based interface (details later in this talk).  Many tests migrated to WPT repo. Paged media test formats still TBD.<a href="https://www.w3.org/TR/string-meta/"></a>.</p>
+</li>
+</ol>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="slide side r" id="initial_summary">
+<img class="side" src="i18n/summary_initial.png" alt="">
+<h1>SUMMARY</h1>
+<ul class="note">
+<li><a href="https://www.w3.org/International/sponsorship/">Internationalization Sponsorship Program</a> was successful in enabling additional work within and beyond the core.</li>
+<li>The Language Enablement initiative was also very successful in expanding the reach of the W3C into new areas around the globe.</li>
+<li><a href="https://www.w3.org/Member/wiki/Internationalization_Initiative_planning">Overall progress</a> • <a href="https://www.w3.org/Member/wiki/Internationalization_Initiative_Progress_report_Mar_2020">Latest update </a></li>
+<li>Initial phase is nearing completion, but much more remains to be done to ensure that people all around the world can interact with the Web in their own language and script.</li>
+<li>Please help us find more experts to extend our networks.</li>
+<li style="color:crimson;">Please contact Jeff Jaffe if your organisation can step up as a sponsor for the next round.</li>
+</ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="slide cover">
+  <h1>Language Enablement Index</h1>
+ </div>
+
+
+
+
+<div class="slide side r" id="index">
+<h1>Language Enablement Index</h1>
+<img class="side" src="i18n/index.png" alt="...">
+<p>A place to <a href="https://w3c.github.io/typography/">find all the information</a> we have been gathering.</p>
+<p>Section headings harmonised across all LE framework deliverables.</p>
+<p>The following examples are from the first subsection in the document: &nbsp; <cite>Vertical text</cite>.</p>
+</div>
+
+<!--div class="slide" id="index2">
+<h1>Links to requirements &amp; specs</h1>
+<img class="side" src="i18n/index_reqs.png" alt="...">
+</div-->
+
+
+
+
+
+
+<div class="slide side r" id="index2">
+<h1>Language Enablement Index</h1>
+<img class="side" src="i18n/index.png" alt="...">
+<p style="text-align: center;">Links to requirements &amp; specs</p>
+<img src="i18n/index_reqs.png" alt="...">
+</div>
+
+<!--div class="slide" id="index2">
+<h1>Links to requirements &amp; specs</h1>
+<img class="side" src="i18n/index_reqs.png" alt="...">
+</div-->
+
+
+
+
+
+
+<div class="slide side r" id="index3">
+<h1>Language Enablement Index</h1>
+<img class="side" src="i18n/index.png" alt="...">
+<p style="text-align: center;">Requests for information</p>
+<img src="i18n/index_info.png" alt="...">
+</div>
+
+<!--div class="slide" id="index4">
+<h1>Requests for information</h1>
+<img class="side" src="i18n/index_info.png" alt="...">
+</div-->
+
+
+
+
+
+
+<div class="slide side r" id="index5">
+<h1>Language Enablement Index</h1>
+<img class="side" src="i18n/index.png" alt="...">
+<p style="text-align: center;">Related issues in W3C WG specs</p>
+<img src="i18n/index_specs.png" alt="...">
+</div>
+
+<!--div class="slide" id="index6">
+<h1>Related issues in W3C WG specs</h1>
+<img class="side" src="i18n/index_specs.png" alt="...">
+</div-->
+
+
+
+
+
+
+<div class="slide side r" id="index7">
+<h1>Language Enablement Index</h1>
+<img class="side" src="i18n/index.png" alt="...">
+<p style="text-align: center;">Implementation bugs raised</p>
+<img src="i18n/index_bugs.png" alt="...">
+</div>
+
+<!--div class="slide" id="index8">
+<h1>Implementation bugs raised</h1>
+<img class="side" src="i18n/index_bugs.png" alt="...">
+</div-->
+
+
+
+
+
+
+<div class="slide side r" id="index9">
+<h1>Language Enablement Index</h1>
+<img class="side" src="i18n/index.png" alt="...">
+<p style="text-align: center;">Type samples</p>
+<img src="i18n/index_samples.png" alt="...">
+</div>
+
+<!--div class="slide" id="index10">
+<h1>Type samples</h1>
+<img class="side" src="i18n/index_samples.png" alt="...">
+</div-->
+
+
+
+
+
+
+<div class="slide side r" id="index11">
+<h1>Language Enablement Index</h1>
+<img class="side" src="i18n/index.png" alt="...">
+<p style="text-align: center;">I18n test suite</p>
+<img src="i18n/index_testsuite.png" alt="...">
+</div>
+
+<div class="slide side r" id="index12">
+<h1>Language Enablement Index</h1>
+<img class="side" src="i18n/index.png" alt="...">
+<p style="text-align: center;">Exploratory tests</p>
+<img src="i18n/index_testinteractive.png" alt="...">
+</div>
+
+
+
+
+<!--div class="slide" id="index12">
+<h1>i18n test suite</h1>
+<img class="side" src="i18n/index_testsuite.png" alt="...">
+</div>
+
+<div class="slide" id="index14">
+<h1>Exploratory tests</h1>
+<img class="side" src="i18n/index_testinteractive.png" alt="...">
+</div-->
+
+
+
+
+
+
+<div class="slide side r" id="index15">
+<h1>Summary</h1>
+<img class="side" src="i18n/index.png" alt="...">
+<p>The  <a href="https://w3c.github.io/typography/">Language Enablement Index</a> is a place to find all the information we have been gathering.</p>
+<ul>
+<li>Links to requirements &amp; specs</li>
+<li>Requests for information</li>
+<li>Related issues in W3C WG specs</li>
+<li>Implementation bugs raised</li>
+<li>Type samples</li>
+<li>Tests: i18n test suite &amp; Exploratory tests</li>
+<li>Gap-analysis document sections</li>
+</ul>
+</div>
+
+
+
+
+
+
+<div class="slide cover">
+  <h1>Recent developments</h1>
+  </div>
+
+
+
+
+<div class="slide" id="devt">
+<h1>Gap analysis</h1>
+<p style="margin-bottom: 0;">Problem:</p>
+<ul class="note" style="margin-top: 0;">
+<li>GitHub pull requests appear formidable and difficult to use to many of the people we want to involve in developing gap-analysis.</li>
+</ul>
+<div class="next">
+<p style="margin-bottom: 0;">Solution:</p>
+<ul class="note" style="margin-top: 0;">
+<li>Move content to GitHub issues</li>
+<li>Changes in issue immediately reflected in HTML doc</li>
+</ul>
+</div>
+<div class="next">
+<p style="margin-bottom: 0;">Benefits:</p>
+<ul class="note" style="margin-top: 0;">
+<li>Easier and faster to edit content</li>
+<li>Easier to hold and find discussions related to a particular topic</li>
+<li>Labels allow new and useful filtering of issues</li>
+</ul>
+</div>
+</div>
+
+
+
+<div class="slide" id="devt2">
+<h1>Gap analysis: HTML doc</h1>
+<img class="side" src="i18n/gh_gap.png" alt="...">
+</div>
+
+
+
+<div class="slide" id="devt3">
+<h1>Gap analysis: Source in GitHub</h1>
+<img class="side" src="i18n/gh_gap2.png" alt="...">
+</div>
+
+
+
+<div class="slide" id="devt4">
+<h1>Gap analysis: Discussion in GH</h1>
+<img class="side" src="i18n/gh_gap3.png" alt="...">
+</div>
+
+
+
+<div class="slide" id="devt5">
+<h1>Gap analysis: Filtering/sorting</h1>
+<img class="side" src="i18n/gh_gap4.png" alt="...">
+</div>
+
+
+
+
+<div class="slide" id="devt6">
+<h1>Gap analysis: Filtering/sorting</h1>
+<img class="side" src="i18n/gh_gap5.png" alt="...">
+</div>
+
+
+
+
+<div class="slide" id="gh_tests">
+<h1>Exploratory tests</h1>
+<p style="margin-bottom: 0;">Problem:</p>
+<ul class="note" style="margin-top: 0;">
+<li>Difficult to learn to write WPT tests and time consuming to generate all the necessary files with the correct content. </li>
+<li>Especially important for gap-analysis work to have a fast &amp; simple way to interactively create exploratory tests and record results.</li>
+</ul>
+<div class="next">
+<p style="margin-bottom: 0;">Solution:</p>
+<ul class="note" style="margin-top: 0;">
+<li>Create test framework pages with form controls to add text, change language/font/box size/etc, and apply various CSS property values.</li>
+<li>Make a single button click record the state of any test page as a URL.</li>
+<li>Use GitHub issues to provide test instructions &amp; detailed results.</li>
+<li>Changes in issue immediately reflected in HTML results summary docs.</li>
+</ul>
+</div>
+</div>
+	
+
+
+<div class="slide" id="gh_tests2">
+<h1>Exploratory tests</h1>
+<p style="margin-bottom: 0;">Benefits:</p>
+<ul class="note" style="margin-top: 0;">
+<li>Significantly lowers the barriers for test production.</li>
+<li>Allows for very quick spot checks to be run up and circulated to others.</li>
+<li>Allows discussion of the tests, by using the issue comment fields.</li>
+<li>Especially useful for exploratory tests requiring many small tweaks and replication across multiple languages.</li>
+<li>Issue labelling allows for novel and useful ways of filtering &amp; sorting tests.</li>
+</ul>
+</div>
+	
+
+
+<div class="slide" id="gh_tests3">
+<h1>Exploratory tests: Test page</h1>
+<img class="side" src="i18n/gh_tests3.png" alt="...">
+</div>
+
+
+
+<div class="slide" id="gh_tests4">
+<h1>Exploratory tests: Page snapshot</h1>
+<img class="side" src="i18n/gh_tests4.png" alt="...">
+</div>
+
+
+
+<div class="slide" id="gh_tests5">
+<h1>Exploratory tests: Instructions &amp; results</h1>
+<img class="side" src="i18n/gh_tests5.png" alt="...">
+</div>
+
+
+
+<div class="slide" id="gh_tests6">
+<h1>Exploratory tests: Summarised results</h1>
+<img class="side" src="i18n/gh_tests6.png" alt="...">
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="slide cover">
+  <h1>Summing up</h1>
+ </div>
+
+
+
+
+
+
+
+
+<div class="slide" id="incremental">
+<!--img class="side" src="i18n/sponsorship.jpg" alt=""-->
+<h1>Summary</h1>
+<ul>
+<li><a href="https://www.w3.org/International/sponsorship/">Internationalization Sponsorship Program</a><ul class="note">
+<li class="next" style="color:crimson;">Please contact Jeff Jaffe if your organisation can step up as a sponsor for the next round.</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li class="next">Developers and implementers are encouraged to:
+<ul class="note">
+<li>Use the <cite><a href="https://w3c.github.io/typography/">Language Enablement Index</a></cite> to find information about worldwide Web support.</li>
+<li><a href="https://github.com/w3c/i18n-tests/wiki/Using-the-interactive-exploratory-tests">Use</a> the new exploratory test mechanism and check out the <a href="https://github.com/w3c/i18n-tests/wiki/List-of-interactive-tests-&-results">results</a>.</li>
+<li>Follow and contribute to the <a href="https://www.w3.org/International/groups/">gap-analysis work</a>.</li>
+</ul>
+</li>
+</ul>
+</div>
+
+
+
+
+
+ <div class="comment">
+   <address>Created 17 March 2020 by <a
+   href="mailto:bert@w3.org">Bert Bos</a>. Last modified
+   $Date: 2020/05/05 12:34:15 $ by $Author: rishida $.</address>
+  </div>
+ </body>
+</html>
