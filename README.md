@@ -2,9 +2,10 @@
 Template to show slides, videos and transcript of a presentation together
 
 ---
-_Read about the effort that led to this script and how it was used in a
-[blog post on the W3C
-site](https://www.w3.org/blog/2020/09/making-video-pages-for-the-w3c-ac-meeting/)._
+*Read about the effort that led to this script and how it was used in
+a [blog
+post](https://www.w3.org/blog/2020/09/making-video-pages-for-the-w3c-ac-meeting/)
+on the W3C site.*
 ---
 
 This directory contains the template (*talk.php, page.css*) and one
