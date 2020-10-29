@@ -5,7 +5,7 @@ Template to show slides, videos and transcript of a presentation together
 
 *Read the [blog
 post](https://www.w3.org/blog/2020/09/making-video-pages-for-the-w3c-ac-meeting/)
-on the W3C site about the effort that led to this script and how it was used.*
+on the W3C site.*
 
 ---
 
